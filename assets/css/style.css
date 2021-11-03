@@ -1,0 +1,106 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    margin: 5% auto;
+    justify-content: center;
+}
+
+.top-left{
+    width: 25%;
+    padding-right: 3%;
+    flex-direction: column;
+}
+
+.top-left h3{
+    font-size: 50px;
+}
+
+.top-right{
+    width: 35%;
+}
+
+.flex-left{
+    width: 10%;
+    padding-right: 3%;
+}
+
+.flex-right{
+    width: 50%;
+}
+
+.project-left{
+    width: 30%;
+    padding-right: 5%;
+}
+
+.project-right{
+    width: 50%;
+}
+
+footer{
+    font-size:smaller;
+}
+
+/* Tablet Grid */
+@media only screen and (max-width: 1024px) {
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+        margin: 2% auto;
+        justify-content: center;
+    }
+    
+    .flex-left{
+        width: 15%;
+        padding-right: 3%;
+    }
+    
+    .flex-right{
+        width: 50%;
+    }
+
+    .project-left{
+        width: 40%;
+        padding-right: 3%;
+    }
+    
+    .project-right{
+        width: 50%;
+    }
+}	
+
+/* Mobile Device Grid */
+@media only screen and (max-width: 768px) {
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .flex-left{
+        width: 75%;
+        padding-right: 3%;
+        text-align: center;
+    }
+    
+    .flex-right{
+        width: 75%;
+        text-align: center;
+    }
+
+    .project-left{
+        width: 75%;
+        padding-right: 3%;
+        text-align: center;
+    }
+    
+    .project-right{
+        width: 75%;
+        text-align: center;
+    }
+}
