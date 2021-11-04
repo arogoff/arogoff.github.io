@@ -13,7 +13,6 @@ body{
 .top-left{
     width: 25%;
     padding-right: 3%;
-    flex-direction: column;
 }
 
 .top-left h3{
@@ -46,6 +45,20 @@ footer{
     font-size:smaller;
 }
 
+.resume{
+    line-height: normal;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.bold-italic{
+    font-weight: bold;
+    font-style: italic;
+}
+
+
 /* Tablet Grid */
 @media only screen and (max-width: 1024px) {
     .flex-container{
@@ -53,6 +66,15 @@ footer{
         flex-direction: row;
         margin: 2% auto;
         justify-content: center;
+    }
+
+    .top-left{
+        width: 35%;
+        padding-right: 3%;
+    }
+    
+    .top-right{
+        width: 45%;
     }
     
     .flex-left{
@@ -81,6 +103,18 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+
+    .top-left{
+        width: 75%;
+        padding-right: 3%;
+        text-align: center;
+    }
+    
+    .top-right{
+        width: 75%;
+        padding-right: 3%;
+        text-align: center;
+    }
     
     .flex-left{
         width: 75%;
@@ -102,5 +136,9 @@ footer{
     .project-right{
         width: 75%;
         text-align: center;
+    }
+
+    .resume{
+        text-align: left;
     }
 }
